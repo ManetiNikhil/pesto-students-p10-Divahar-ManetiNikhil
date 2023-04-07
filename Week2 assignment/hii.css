@@ -1,0 +1,20 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+    
+    }
+  Main{
+    Width:50%; margin: auto;
+  
+    display:grid;
+    grid-template-columns:300px 300px;
+    Grid-column-gap:5rem;
+  }
+  .details{
+    padding-left: 20%;
+     }
+      .link{
+        color: rgb(171, 6, 212);
+     }
