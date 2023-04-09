@@ -1,0 +1,51 @@
+.app {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    position: absolute;
+    z-index: 1;
+}
+
+.rotate {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 2;
+    transition: transform 1s linear;
+}
+
+.rotate#square1 {
+    background-color: red;
+    transform-origin: top left;
+}
+
+#square2 {
+    background-color: blue;
+    transform-origin: bottom left;
+}
+
+#square3 {
+    background-color: yellow;
+    transform-origin: top right;
+}
+
+#square4 {
+    background-color: green;
+    transform-origin: bottom right;
+}
+
+.app:hover #square1,
+.app:hover #square4 {
+    transform: rotate(90deg);
+}
+
+.app:hover #square2,
+.app:hover #square3 {
+    transform: rotate(-90deg);
+}
